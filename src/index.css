@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+@layer utilities {
+    .scrollbar-visible {
+      scrollbar-width: thin; /* For Firefox */
+      scrollbar-color: gray lightgray; /* For Firefox */
+    }
+  
+    .scrollbar-visible::-webkit-scrollbar {
+      height: 8px; /* Horizontal scrollbar height */
+    }
+  
+    .scrollbar-visible::-webkit-scrollbar-track {
+      background: lightgray; /* Track color */
+    }
+  
+    .scrollbar-visible::-webkit-scrollbar-thumb {
+      background-color: gray; /* Thumb color */
+      border-radius: 10px; /* Rounded edges for the thumb */
+    }
+  }
+  

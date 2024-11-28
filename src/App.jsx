@@ -1,44 +1,98 @@
-import React, { useState } from "react";
-// import JsxWithCurlyBraces from "./components/JsxWithCurlyBraces/JsxWithCurlyBraces";
-// import ReactState from "./components/ReactState/ReactState";
-// import Toggle from "./components/Toogle/Toggle";
-import UserComponent from "./components/UserComponets/UserComponent";
-import Student from "./components/Student/Student";
+// import React from "react";
+// import CollageData from "./components/CollgeData/CollageData";
+
+// const App = () => {
+//   const collegeData = [
+//     {
+//       names: "College1",
+//       city: "Noida",
+//       web: "www.college1.com",
+//       students: [
+//         {
+//           names: "Student1",
+//           age: 23,
+//           email: "V9Hxk@example.com",
+//         },
+//         {
+//           names: "Student2",
+//           age: 23,
+//           email: "V9Hxk@example.com",
+//         },
+//         {
+//           names: "Student3",
+//           age: 23,
+//           email: "V9Hxk@example.com",
+//         },
+//       ],
+//     },
+
+//     {
+//       names: "College2",
+//       city: "Bbsr",
+//       web: "www.college2.com",
+//       students: [
+//         {
+//           names: "Student1",
+//           age: 23,
+//           email: "V9Hxk@example.com",
+//         },
+//         {
+//           names: "Student2",
+//           age: 23,
+//           email: "V9Hxk@example.com",
+//         },
+//         {
+//           names: "Student3",
+//           age: 23,
+//           email: "V9Hxk@example.com",
+//         },
+//       ],
+//     },
+
+//     {
+//       names: "College3",
+//       city: "Delhi",
+//       web: "www.college3.com",
+//       students: [
+//         {
+//           names: "Student1",
+//           age: 23,
+//           email: "V9Hxk@example.com",
+//         },
+//         {
+//           names: "Student2",
+//           age: 23,
+//           email: "V9Hxk@example.com",
+//         },
+//         {
+//           names: "Student3",
+//           age: 23,
+//           email: "V9Hxk@example.com",
+//         },
+//       ],
+//     },
+//   ];
+
+//   return (
+//     <div>
+//       <CollageData data={collegeData} />
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+
+import React from 'react'
+import { FiChevronUp } from 'react-icons/fi'
 
 const App = () => {
-  let MyName = "Hello";
-  const BioData = {
-    myName: "tushar",
-    age: 23,
-    email: "soumyapradhan63711@gmail.com",
-  };
-
-  const CollegeName = ["IIT", "NIT", "TAT", "SOA", "NIIS"];
-
-  const [student, setStudent] = useState("sdfdsf");
-
   return (
-    <>
-      <h1>{student}</h1>
+    <div>
+      <FiChevronUp />
+    </div>
+  )
+}
 
-
-      {student && <Student names={student} />}
-
-      <button
-        style={{ width: "100px", height: "50px", backgroundColor: "red" }}
-        onClick={() => setStudent("sdfss")}
-      >
-        changeName
-      </button>
-
-      {/* <UserComponent
-        names="MyName"
-        myName={MyName}
-        myBioData={BioData}
-        college={CollegeName}
-      /> */}
-    </>
-  );
-};
-
-export default App;
+export default App
